@@ -116,7 +116,7 @@ int main (int argc, char *argv[]) {
     exit (EXIT_FAILURE);
   }
 
-  // Set destination MAC address: you need to fill this out
+  // Set destination MAC address
   dst_mac[0] = 0xff;
   dst_mac[1] = 0xff;
   dst_mac[2] = 0xff;
@@ -125,7 +125,7 @@ int main (int argc, char *argv[]) {
   dst_mac[5] = 0xff;
   while(1){
   generate_rand_ip6(src_ip);
-  // Destination URL or IPv6 address: you need to fill this out
+  // Destination URL or IPv6 address
    strcpy (target, dst_ip);
 
   // Fill out hints for getaddrinfo().
